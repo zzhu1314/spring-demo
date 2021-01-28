@@ -1,7 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ca004223-d6b7-45b7-b95e-7d660eeee8a0" name="Default Changelist" comment="" />
+    <list default="true" id="ca004223-d6b7-45b7-b95e-7d660eeee8a0" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zzhu/spring/tx/bp/MyFactoryBeanPostProcessor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zzhu/spring/tx/service/TxAndAsyncCirculationService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/zzhu/spring/tx/service/impl/TxAndAsyncCirculationServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/zzhu/spring/tx/EnableTransactionManagermentBean.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/zzhu/spring/tx/EnableTransactionManagermentBean.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/zzhu/spring/tx/TxTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/zzhu/spring/tx/TxTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zzhu/spring/tx/EnableTransactionManagermentBean.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zzhu/spring/tx/EnableTransactionManagermentBean.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/zzhu/spring/tx/service/impl/CommonServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/zzhu/spring/tx/service/impl/CommonServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/zzhu/spring/tx/TxTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/zzhu/spring/tx/TxTest.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -10,11 +20,14 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="FxmlFile" />
         <option value="Interface" />
+        <option value="FxmlFile" />
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
@@ -30,6 +43,9 @@
     </option>
   </component>
   <component name="ProjectId" id="1nP5icvfCt5cJLmd4elOnJFcKgU" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -39,7 +55,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../spring-source/spring-framework/spring-aop" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../spring-source/spring-framework/spring-beans" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.26335174" />
@@ -50,7 +66,7 @@
       <recent name="com.zzhu.spring.tx" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.TxTest.test01">
+  <component name="RunManager" selected="JUnit.TxTest.test02">
     <configuration name="A" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.zzhu.spring.tx.A" />
       <module name="spring-demo-self" />
@@ -108,10 +124,27 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TxTest.test02" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="spring-demo-self" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.zzhu.spring.tx.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.zzhu.spring.tx" />
+      <option name="MAIN_CLASS_NAME" value="com.zzhu.spring.tx.TxTest" />
+      <option name="METHOD_NAME" value="test02" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.TxTest.test01" />
+        <item itemvalue="JUnit.TxTest.test02" />
         <item itemvalue="JUnit.TxTest" />
+        <item itemvalue="JUnit.TxTest.test01" />
         <item itemvalue="Application.B" />
         <item itemvalue="Application.A" />
       </list>
@@ -128,7 +161,7 @@
       <option name="presentableId" value="Default" />
       <updated>1611279013810</updated>
       <workItem from="1611279016541" duration="16385000" />
-      <workItem from="1611538123447" duration="41865000" />
+      <workItem from="1611538123447" duration="61980000" />
     </task>
     <servers />
   </component>
@@ -136,90 +169,128 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="452" y="96" key="#Project_Structure" timestamp="1611716817672">
+    <state x="452" y="96" key="#Project_Structure" timestamp="1611816229345">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="452" y="96" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1611716817672" />
-    <state x="721" y="162" key="#com.intellij.ide.util.MemberChooser" timestamp="1611649034425">
+    <state x="452" y="96" key="#Project_Structure/0.0.1920.1040@0.0.1920.1040" timestamp="1611816229345" />
+    <state x="721" y="162" key="#com.intellij.ide.util.MemberChooser" timestamp="1611823954971">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="721" y="162" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1611649034425" />
+    <state x="721" y="162" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1611823954971" />
     <state x="708" y="354" width="503" height="343" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1611281866322">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="708" y="354" width="503" height="343" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1920.1040@0.0.1920.1040" timestamp="1611281866322" />
-    <state x="1317" y="229" width="603" height="811" key="#xdebugger.evaluate" timestamp="1611738286797">
+    <state x="1123" y="130" width="603" height="811" key="#xdebugger.evaluate" timestamp="1611824568066">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="1317" y="229" width="603" height="811" key="#xdebugger.evaluate/0.0.1920.1040@0.0.1920.1040" timestamp="1611738286797" />
-    <state width="1255" height="582" key="DebuggerActiveHint" timestamp="1611738315015">
+    <state x="1123" y="130" width="603" height="811" key="#xdebugger.evaluate/0.0.1920.1040@0.0.1920.1040" timestamp="1611824568066" />
+    <state width="1255" height="582" key="DebuggerActiveHint" timestamp="1611825597934">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1255" height="582" key="DebuggerActiveHint/0.0.1920.1040@0.0.1920.1040" timestamp="1611738315015" />
-    <state x="657" y="175" key="DetectedRootsChooserDialog" timestamp="1611716811938">
+    <state width="1255" height="582" key="DebuggerActiveHint/0.0.1920.1040@0.0.1920.1040" timestamp="1611825597934" />
+    <state x="657" y="175" key="DetectedRootsChooserDialog" timestamp="1611816226133">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="657" y="175" key="DetectedRootsChooserDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1611716811938" />
-    <state x="690" y="218" key="FileChooserDialogImpl" timestamp="1611716810656">
+    <state x="657" y="175" key="DetectedRootsChooserDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1611816226133" />
+    <state x="690" y="218" key="FileChooserDialogImpl" timestamp="1611816224652">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="690" y="218" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1611716810656" />
-    <state width="1867" height="296" key="GridCell.Tab.0.bottom" timestamp="1611742764674">
+    <state x="690" y="218" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1611816224652" />
+    <state width="1867" height="338" key="GridCell.Tab.0.bottom" timestamp="1611825668095">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1867" height="296" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1611742764674" />
-    <state width="1867" height="296" key="GridCell.Tab.0.center" timestamp="1611742764674">
+    <state width="1867" height="338" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1611825668095" />
+    <state width="1867" height="338" key="GridCell.Tab.0.center" timestamp="1611825668095">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1867" height="296" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1611742764674" />
-    <state width="1867" height="296" key="GridCell.Tab.0.left" timestamp="1611742764674">
+    <state width="1867" height="338" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1611825668095" />
+    <state width="1867" height="338" key="GridCell.Tab.0.left" timestamp="1611825668095">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1867" height="296" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1611742764674" />
-    <state width="1867" height="296" key="GridCell.Tab.0.right" timestamp="1611742764674">
+    <state width="1867" height="338" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1611825668095" />
+    <state width="1867" height="338" key="GridCell.Tab.0.right" timestamp="1611825668095">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1867" height="296" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1611742764674" />
-    <state width="1867" height="346" key="GridCell.Tab.1.bottom" timestamp="1611742233984">
+    <state width="1867" height="338" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1611825668095" />
+    <state width="1867" height="338" key="GridCell.Tab.1.bottom" timestamp="1611825494378">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1867" height="346" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1611742233984" />
-    <state width="1867" height="346" key="GridCell.Tab.1.center" timestamp="1611742233983">
+    <state width="1867" height="338" key="GridCell.Tab.1.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1611825494378" />
+    <state width="1867" height="338" key="GridCell.Tab.1.center" timestamp="1611825494378">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1867" height="346" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1611742233983" />
-    <state width="1867" height="346" key="GridCell.Tab.1.left" timestamp="1611742233983">
+    <state width="1867" height="338" key="GridCell.Tab.1.center/0.0.1920.1040@0.0.1920.1040" timestamp="1611825494378" />
+    <state width="1867" height="338" key="GridCell.Tab.1.left" timestamp="1611825494378">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1867" height="346" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1611742233983" />
-    <state width="1867" height="346" key="GridCell.Tab.1.right" timestamp="1611742233984">
+    <state width="1867" height="338" key="GridCell.Tab.1.left/0.0.1920.1040@0.0.1920.1040" timestamp="1611825494378" />
+    <state width="1867" height="338" key="GridCell.Tab.1.right" timestamp="1611825494378">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1867" height="346" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1611742233984" />
+    <state width="1867" height="338" key="GridCell.Tab.1.right/0.0.1920.1040@0.0.1920.1040" timestamp="1611825494378" />
     <state x="345" y="78" key="SettingsEditor" timestamp="1611279180033">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="345" y="78" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1611279180033" />
-    <state x="614" y="198" width="705" height="655" key="StructurePopup" timestamp="1611647675979">
+    <state x="614" y="198" width="705" height="655" key="StructurePopup" timestamp="1611821507065">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="614" y="198" width="705" height="655" key="StructurePopup/0.0.1920.1040@0.0.1920.1040" timestamp="1611647675979" />
+    <state x="614" y="198" width="705" height="655" key="StructurePopup/0.0.1920.1040@0.0.1920.1040" timestamp="1611821507065" />
+    <state x="308" y="384" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1611821422949">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="308" y="384" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1920.1040@0.0.1920.1040" timestamp="1611821422949" />
+    <state x="494" y="151" width="933" height="738" key="find.popup" timestamp="1611822435516">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="494" y="151" width="933" height="738" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1611822435516" />
     <state x="532" y="237" key="run.anything.popup" timestamp="1611642243591">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="532" y="237" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1611642243591" />
-    <state x="532" y="-5" width="840" height="1032" key="search.everywhere.popup" timestamp="1611742275425">
+    <state x="532" y="-5" width="840" height="1032" key="search.everywhere.popup" timestamp="1611827246194">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="532" y="-5" width="840" height="1032" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1611742275425" />
+    <state x="532" y="-5" width="840" height="1032" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1611827246194" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://F:/project_study/spring-source-5.2.8/spring-context/src/main/java/org/springframework/context/annotation/AspectJAutoProxyRegistrar.java</url>
           <line>42</line>
           <option name="timeStamp" value="14" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/5.2.8.RELEASE/spring-core-5.2.8.RELEASE.jar!/org/springframework/core/GenericTypeResolver.class</url>
+          <line>56</line>
+          <option name="timeStamp" value="46" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/5.2.8.RELEASE/spring-core-5.2.8.RELEASE.jar!/org/springframework/core/ResolvableType.class</url>
+          <line>425</line>
+          <option name="timeStamp" value="47" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/5.2.8.RELEASE/spring-core-5.2.8.RELEASE.jar!/org/springframework/core/GenericTypeResolver.class</url>
+          <line>50</line>
+          <option name="timeStamp" value="50" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/5.2.8.RELEASE/spring-core-5.2.8.RELEASE.jar!/org/springframework/core/ResolvableType.class</url>
+          <line>82</line>
+          <option name="timeStamp" value="51" />
+        </line-breakpoint>
+        <line-breakpoint type="java-line">
+          <url>jar://C:/Program Files/Java/jdk1.8.0_211/src.zip!/java/lang/Class.java</url>
+          <line>764</line>
+          <option name="timeStamp" value="53" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/zzhu/spring/tx/service/impl/TxAndAsyncCirculationServiceImpl.java</url>
+          <line>35</line>
+          <option name="timeStamp" value="100" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

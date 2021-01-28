@@ -3,13 +3,14 @@ package com.zzhu.spring.tx;
 import com.alibaba.druid.pool.DruidDataSource;
 import org.mybatis.spring.SqlSessionFactoryBean;
 import org.mybatis.spring.annotation.MapperScan;
-import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.ComponentScan;
-import org.springframework.context.annotation.Configuration;
-import org.springframework.context.annotation.EnableAspectJAutoProxy;
+import org.springframework.context.annotation.*;
+import org.springframework.core.task.TaskExecutor;
 import org.springframework.jdbc.datasource.DataSourceTransactionManager;
+import org.springframework.scheduling.annotation.EnableAsync;
+import org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor;
 import org.springframework.transaction.PlatformTransactionManager;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
+import org.springframework.transaction.annotation.TransactionManagementConfigurationSelector;
 import org.springframework.transaction.support.TransactionTemplate;
 
 import javax.sql.DataSource;
@@ -24,6 +25,8 @@ import javax.sql.DataSource;
 @MapperScan(basePackages = "com.zzhu.spring.tx.mapper")
 @EnableTransactionManagement //开启事务代理的入口
 @EnableAspectJAutoProxy
+@EnableAsync
+//@Import(TransactionManagementConfigurationSelector.class)     自己引入会报错  必须要有EnableTransactionManagement 注解
 public class EnableTransactionManagermentBean {
 
     /**
@@ -59,5 +62,11 @@ public class EnableTransactionManagermentBean {
         TransactionTemplate transactionTemplate = new TransactionTemplate();
         transactionTemplate.setTransactionManager(platformTransactionManager());
         return transactionTemplate;
+    }
+
+    @Bean
+    public TaskExecutor taskExecutor(){
+        ThreadPoolTaskExecutor threadPoolTaskExecutor = new ThreadPoolTaskExecutor();
+        return threadPoolTaskExecutor;
     }
 }
