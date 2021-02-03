@@ -23,7 +23,7 @@ import org.springframework.transaction.annotation.Transactional;
  * 但一级缓存中的bean时一个异步代理bean
  * 循环依赖注入的对象是一个事务代理对象 不是同一个
  */
-@Service
+//@Service
 public class TxAndAsyncCirculationServiceImpl implements TxAndAsyncCirculationService {
     @Autowired
     //@Lazy

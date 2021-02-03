@@ -1,11 +1,14 @@
 package com.zzhu.spring.tx;
 
 
+import com.zzhu.spring.tx.annotation.MyService;
 import com.zzhu.spring.tx.service.CommonService;
 import com.zzhu.spring.tx.service.IStudentService;
 import com.zzhu.spring.tx.service.TxAndAsyncCirculationService;
 import org.junit.Test;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+
+import java.lang.annotation.Annotation;
 
 public class TxTest {
 
@@ -20,8 +23,8 @@ public class TxTest {
     @Test
     public void test02(){
         AnnotationConfigApplicationContext applicationContext = new AnnotationConfigApplicationContext(EnableTransactionManagermentBean.class);
-        TxAndAsyncCirculationService bean = applicationContext.getBean(TxAndAsyncCirculationService.class);
-        bean.txAndAsync();
+      /*  TxAndAsyncCirculationService bean = applicationContext.getBean(TxAndAsyncCirculationService.class);
+        bean.txAndAsync();*/
 
     }
 }

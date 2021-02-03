@@ -7,10 +7,9 @@ import org.springframework.beans.factory.support.DefaultListableBeanFactory;
 import org.springframework.stereotype.Component;
 
 //@Component
-public class MyFactoryBeanPostProcessor implements BeanFactoryPostProcessor {
+public class BeanDefinitionNameSortFactoryPostProcessor implements BeanFactoryPostProcessor {
     @Override
     public void postProcessBeanFactory(ConfigurableListableBeanFactory beanFactory) throws BeansException {
-        DefaultListableBeanFactory defaultListableBeanFactory = (DefaultListableBeanFactory)beanFactory;
-        defaultListableBeanFactory.setAllowRawInjectionDespiteWrapping(true);
+
     }
 }
