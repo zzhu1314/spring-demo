@@ -14,6 +14,7 @@ public class RedisCacheServiceImpl implements CacheService {
         final String keyf = k.toString();
         byte[] key = keyf.getBytes();
         byte[] ifPresent = redisApi.get(key);
+        System.out.println("从二级缓存中获取数据 result="+SerializationUtils.deserialize(ifPresent));
         return (T) SerializationUtils.deserialize(ifPresent);
     }
 

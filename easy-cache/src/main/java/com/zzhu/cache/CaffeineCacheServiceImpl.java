@@ -15,22 +15,23 @@ public class CaffeineCacheServiceImpl implements LocalCacheService, SmartInitial
 
     private ApplicationContext applicationContext;
 
-    private Cache<byte[], byte[]> cache;
+    private Cache<String ,byte[]> cache;
 
     @Override
     public <T, K> T get(K k) {
         final String keyf = k.toString();
-        byte[] key = keyf.getBytes();
-        byte[] value = cache.getIfPresent(key);
+        //byte[] key = keyf.getBytes();
+        byte[] value = cache.getIfPresent(keyf);
+        System.out.println("从一级缓存中获取数据 result="+SerializationUtils.deserialize(value));
         return (T) SerializationUtils.deserialize(value);
     }
 
     @Override
     public <K, V> V put(K k, V v) {
         final String keyf = k.toString();
-        byte[] key = keyf.getBytes();
+        //byte[] key = keyf.getBytes();
         byte[] value = SerializationUtils.serialize(v);
-        cache.put(key, value);
+        cache.put(keyf, value);
         return v;
     }
 
