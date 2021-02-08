@@ -7,6 +7,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 
 import javax.annotation.Resource;
 
+/**
+ * 用责任链模式  无论需要几级缓存自己拓展
+ *
+ */
 public class CacheUtil implements InitializingBean {
     @Resource(name = "firstHandler")
     private HandlerData firstHandlerData;
