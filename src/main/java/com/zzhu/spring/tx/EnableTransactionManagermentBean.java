@@ -24,7 +24,7 @@ import javax.sql.DataSource;
 @ComponentScan(value = "com.zzhu.spring.tx")
 @MapperScan(basePackages = "com.zzhu.spring.tx.mapper")
 @EnableTransactionManagement //开启事务代理的入口
-@EnableAspectJAutoProxy
+@EnableAspectJAutoProxy(exposeProxy = true)
 @EnableAsync
 //@Import(TransactionManagementConfigurationSelector.class)     自己引入会报错  必须要有EnableTransactionManagement 注解
 public class EnableTransactionManagermentBean {

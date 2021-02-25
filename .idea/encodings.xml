@@ -2,6 +2,7 @@
 <project version="4">
   <component name="Encoding">
     <file url="file://F:/project/voc-call-center/console/src/main/resources/application.properties" charset="UTF-8" />
+    <file url="file://F:/project_study/nacos/nacos-1.3.1/console/src/main/resources/application.properties" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/easy-cache/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/easy-cache/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />

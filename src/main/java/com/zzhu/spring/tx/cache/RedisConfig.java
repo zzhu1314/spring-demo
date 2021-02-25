@@ -7,8 +7,8 @@ import org.springframework.data.redis.connection.jedis.JedisConnectionFactory;
 import org.springframework.data.redis.core.RedisTemplate;
 import org.springframework.stereotype.Component;
 
-@PropertySource(value = "classpath:redis/redis.properties")
-@Component
+//@PropertySource(value = "classpath:redis.properties")
+//@Component
 public class RedisConfig {
 
     @Value(value = "${redis.host}")

@@ -12,7 +12,7 @@ import org.springframework.data.redis.core.RedisTemplate;
 import java.util.ArrayList;
 import java.util.List;
 
-@Configuration
+//@Configuration
 public class CacheConfig {
 
     @Bean

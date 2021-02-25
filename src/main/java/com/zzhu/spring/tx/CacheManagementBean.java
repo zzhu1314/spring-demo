@@ -5,7 +5,7 @@ import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 
 @ComponentScan("com.zzhu.spring.tx.cache")
-@Configuration
+//@Configuration
 @EnableCaching
 public class CacheManagementBean {
 }
